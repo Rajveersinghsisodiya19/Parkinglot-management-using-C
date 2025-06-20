@@ -3,6 +3,7 @@
 This C program is a simple Car Management System designed to help manage vehicle parking in a lot. It allows users to park vehicles, check available spots, view parking history, and see parking instructions.
 
 #**Features**
+
 1.Vehicle Parking: Park buses, cars, and bikes with associated fees.
 2.Dynamic Pricing: Parking fees can increase based on the number of vehicles already parked.
 3.Parking Spot Availability: Check the number of empty slots for each vehicle type.
@@ -15,24 +16,27 @@ This C program is a simple Car Management System designed to help manage vehicle
 
 #**Getting Started**
 ***Prerequisites**
+
 To compile and run this program, you'll need a C compiler (like GCC).
 
 ***How to Compile**
+
 1.Save the code: Save the provided C code as a .c file (e.g., parking_system.c).
 
 2.Open a terminal or command prompt: Navigate to the directory where you saved the file.
 
 3.Compile the code: Use the following command to compile the program: gcc parking_system.c -o parking_system -lm
-
 gcc: The C compiler.
 parking_system.c: Your source code file.
 -o parking_system: Specifies the output executable name.
 -lm: Links the math library, which is used for difftime (though math.h itself isn't strictly necessary for difftime, it's good practice to include it if you might use other math functions).
 
 ***How to Run**
+
 After successful compilation, you can run the executable: ./parking_system 
 
 ***How to Use**
+
 1.Login: Upon starting the program, you'll be prompted for a UserName and Password.
       For this version, the password is hardcoded as 1. You can enter any username.
 
