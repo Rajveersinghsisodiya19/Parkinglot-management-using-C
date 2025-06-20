@@ -2,7 +2,7 @@
 
 This C program is a simple Car Management System designed to help manage vehicle parking in a lot. It allows users to park vehicles, check available spots, view parking history, and see parking instructions.
 
-#Features
+#**Features**
 1.Vehicle Parking: Park buses, cars, and bikes with associated fees.
 2.Dynamic Pricing: Parking fees can increase based on the number of vehicles already parked.
 3.Parking Spot Availability: Check the number of empty slots for each vehicle type.
@@ -13,11 +13,11 @@ This C program is a simple Car Management System designed to help manage vehicle
 8.User Authentication: A basic login system is in place for accessing the main menu.
 9.Input Validation: Basic validation for user input like names, vehicle numbers, and choices.
 
-#Getting Started
-**Prerequisites**
+#**Getting Started**
+***Prerequisites**
 To compile and run this program, you'll need a C compiler (like GCC).
 
-**How to Compile**
+***How to Compile**
 1.Save the code: Save the provided C code as a .c file (e.g., parking_system.c).
 
 2.Open a terminal or command prompt: Navigate to the directory where you saved the file.
@@ -29,10 +29,10 @@ parking_system.c: Your source code file.
 -o parking_system: Specifies the output executable name.
 -lm: Links the math library, which is used for difftime (though math.h itself isn't strictly necessary for difftime, it's good practice to include it if you might use other math functions).
 
-**How to Run**
+***How to Run**
 After successful compilation, you can run the executable: ./parking_system 
 
-**How to Use**
+***How to Use**
 1.Login: Upon starting the program, you'll be prompted for a UserName and Password.
       For this version, the password is hardcoded as 1. You can enter any username.
 
@@ -55,6 +55,7 @@ After successful compilation, you can run the executable: ./parking_system
   *Exit: Exits the program.
   
 #**File Storage**
+
 The program stores customer parking details in a file named customers.csv. This file is created automatically if it doesn't exist. Each entry includes:
 
 1.Name
@@ -65,7 +66,7 @@ The program stores customer parking details in a file named customers.csv. This 
 6.Fee paid
 7.Action (e.g., "Parked", "Checked")
 
-**Important Notes**
+***Important Notes**
 
     1.system("clear"): This command is used to clear the console screen. It works on Unix-like systems (Linux, macOS). If you are on Windows, you might need to change it to system("cls").
     2.Password Handling: The current password input is basic. In a real-world application, password input should be masked (e.g., using getch() for hidden input) and securely handled (e.g., hashed and stored). The commented-out getch() block shows an attempt at this.
